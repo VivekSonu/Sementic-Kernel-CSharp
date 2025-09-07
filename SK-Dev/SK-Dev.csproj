@@ -12,7 +12,9 @@
 		<Compile Remove="DeepSeekAzureInference.cs" />
 		<Compile Remove="GitHubReferences.cs" />
 		<Compile Remove="HuggingFace.cs" />
+		<Compile Remove="ONNXInference.cs" />
 		<Compile Remove="openAI.cs" />
+		<Compile Remove="Program.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -25,12 +27,17 @@
 		<PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureAIInference" Version="1.64.0-beta" />
 		<PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureOpenAI" Version="1.64.0" />
 		<PackageReference Include="Microsoft.SemanticKernel.Connectors.HuggingFace" Version="1.64.0-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.Onnx" Version="1.64.0-alpha" />
 
 
 		<None Update="appsettings.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="images\" />
 	</ItemGroup>
 
 </Project>

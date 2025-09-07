@@ -10,8 +10,6 @@ namespace SK_Dev
     {
         static async Task Main(string[] args)
         {
-
-
             // Build and get configuration from appsettings.json, environment variables, and user secrets
             IConfiguration config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
